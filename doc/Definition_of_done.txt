@@ -1,0 +1,12 @@
+Definition of Done
+−    Veilig pinnen (verbinding client - server is versleuteld en geauthentiseerd)
+−    De GUI is gebruiksvriendelijk (wordt getest door CMD studenten)
+
+Specificaties bank en NOOB:
+ −    Er is vanuit elk land maximaal één (1) verbinding mogelijk naar de NOOB server
+ −    Binnen een land moeten de verschillende banken met elkaar kunnen communiceren, hoe dit wordt opgelost is vrij per land.
+ −    Er mag alleen gebruik worden gemaakt van een Unix-based server van school. 
+ −    De pinautomaat werkt continu en autonoom (dus na transactie weer ‘welkom bij de bank’ zonder tussenkomst van personen)
+ −    Voor de weergave van de GUI mag het scherm van een laptop worden gebruikt. 
+ −    Het pinproces op de GUI moet worden bediend met een invoermogelijkheid (keypad) met maximaal 16 knoppen.
+ −    Er mag geen gebruik worden gemaakt van toetsenbord, muis of touchscreen van een laptop als invoermogelijkheid.
