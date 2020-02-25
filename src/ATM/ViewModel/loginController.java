@@ -1,5 +1,6 @@
-package GUI_ATM;
+package ATM.ViewModel;
 
+import java.awt.Button;
 import java.awt.Label;
 
 /**
@@ -22,7 +23,7 @@ public class loginController {
     protected void SayHello(ActionEvent event) {
         System.out.println("hello");
         //Window owner = submitButton.getScene().getWindow();
-        SayHelloField.setText("hello");
+        //SayHelloField.setText("hello");
     }
     
 }
