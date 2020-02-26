@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="ATM.ViewModel.loginController">
-    <padding><Insets bottom="40" left="40" right="40" top="40" /></padding>
-    <columnConstraints>
-        <ColumnConstraints halignment="RIGHT" maxWidth="Infinity" minWidth="100.0" prefWidth="100.0">
-        </ColumnConstraints>
-    </columnConstraints>
-    <!-- Add Submit Button -->
-    <Button fx:id="SayHelloButton" defaultButton="true" onAction="#SayHello" prefHeight="40" prefWidth="100" text="Say hello" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.rowSpan="1">
-    </Button>
-    <Text></Text>
-    </GridPane>
+<!-- fx:controller="ATM.ViewModel.WelcomeController" -->
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:id="achorPane" >
+   <children>
+      <Label layoutX="286.0" layoutY="192.0" text="type pincode" />
+   </children>
+</AnchorPane>

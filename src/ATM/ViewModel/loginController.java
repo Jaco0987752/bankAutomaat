@@ -11,19 +11,11 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
-public class loginController {
-
-    @FXML
-    private Button SayHelloButton;
-    
-    @FXML
-    private Label SayHelloField;
+public class LoginController {
 
     @FXML
     protected void SayHello(ActionEvent event) {
         System.out.println("hello");
-        //Window owner = submitButton.getScene().getWindow();
-        //SayHelloField.setText("hello");
     }
     
 }
