@@ -4,7 +4,6 @@ package ATM;
 import javafx.stage.Stage;
 import java.lang.*;
 import javafx.application.Application;
-import ATM.Util.ScreenManager;
 import java.lang.reflect.InvocationTargetException;
 import java.net.URL;
 import javafx.fxml.FXMLLoader;
@@ -28,7 +27,7 @@ public class App extends Application{
     public static App GetApp(){
         return reference;
     }
-    
+
     private Stage stage; // Declare static Stage
 
     @Override
