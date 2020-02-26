@@ -1,6 +1,7 @@
 package ATM.ViewModel;
 
 import ATM.Model.*;
+import ATM.App;
 import java.net.URL;
 import javafx.application.Platform;
 //import javafx.event.ActionEvent;
@@ -32,15 +33,13 @@ public class WelcomeController {
 
     private CardChecker cardChecker = new CardChecker();
 
-
     Thread thread = new Thread() {
         public void run() {
             //Do some stuff in another thread
             delay(2000);
+            System.out.println("card accepted"); 
             Platform.runLater(new Runnable() {
-                
                 public void run() {
-                    System.out.println("go");
                     goToNextPage();
                 }
             });
@@ -53,30 +52,8 @@ public class WelcomeController {
     }
 
     public void goToNextPage() {
-        System.out.println("card accepted");
-        Stage stage = (Stage) achorPane.getScene().getWindow();
-        Parent par = LoadDoc("/ATM/View/Login.fxml");
-        if (par != null){
-        Scene scene = new Scene(par);
-        stage.setTitle("Hello World");
-        stage.setScene(scene);
-        stage.show();
-    }
-    }
-
-    private Parent LoadDoc(String strUrl) {
-        try {
-            URL url = getClass().getResource(strUrl);
-            return FXMLLoader.load(url);
-
-        } catch (NullPointerException e) {
-            System.err.println("Can't find the specific view");
-        } catch (LoadException e) {
-            System.err.println("Error in View");
-        } catch (Exception e) {
-            System.err.println(e);
-        }
-        return null;
+        App app = App.GetApp();
+        app.ScreenLoader("Login");
     }
 
     private void delay(int millies) {
