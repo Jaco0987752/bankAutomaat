@@ -1,4 +1,4 @@
-package ATM.Model;
+package Model;
 
 /**
  * RFIDCardAccepted

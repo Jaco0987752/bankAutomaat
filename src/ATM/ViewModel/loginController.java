@@ -1,10 +1,10 @@
-package ATM.ViewModel;
+package ViewModel;
 
 /**
  * loginController
  */
 
-import ATM.App;
+import ViewModel.App;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;

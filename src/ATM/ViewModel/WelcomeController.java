@@ -1,7 +1,7 @@
-package ATM.ViewModel;
+package ViewModel;
 
-import ATM.Model.*;
-import ATM.App;
+import Model.*;
+import ViewModel.App;
 import java.net.URL;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
