@@ -6,17 +6,12 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Debug (Launch) - Current File",
+            "name": "CodeLens (Launch) - App",
             "request": "launch",
-            "mainClass": "${file}"
-        },
-        {
-            "type": "java",
-            "name": "Debug (Launch)-App",
-            "request": "launch",
-            "mainClass": "${file}",
-            "vmArgs": "--module-path ${cwd}\\javafx-sdk-13.0.2\\lib --add-modules javafx.controls,javafx.fxml"
-            
+            "mainClass": "ViewModel.App",
+            "projectName": "ATM_4182df43",
+            "vmArgs": "--module-path ${cwd}\\lib\\javafx-sdk-13.0.2\\lib --add-modules javafx.controls,javafx.fxml"
+
         }
     ]
 }
