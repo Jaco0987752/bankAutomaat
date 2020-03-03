@@ -4,10 +4,6 @@ package ViewModel;
  * loginController
  */
 
-import ViewModel.App;
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.scene.control.*;
 import javafx.application.Platform;
 
 
@@ -24,7 +20,7 @@ public class LoginController {
                 System.out.println("pin accepted"); 
                 Platform.runLater(new Runnable() {
                     public void run() {
-                        App app = App.GetApp();
+                        final App app = App.GetApp();
                         app.ScreenLoader("OptionMenu");
                     }
                 });
@@ -33,10 +29,10 @@ public class LoginController {
         thread.start();
     }
 
-    private void delay(int millies) {
-        try{
-            Thread.sleep((long)millies);
-        }catch (Exception e){
+    private void delay(final int millies) {
+        try {
+            Thread.sleep((long) millies);
+        } catch (final Exception e) {
             System.out.println("Thread interrupted");
         }
     }

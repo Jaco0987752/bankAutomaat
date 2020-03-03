@@ -1,17 +1,9 @@
 package ViewModel;
 
-import Model.*;
-import ViewModel.App;
-import java.net.URL;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
-import javafx.fxml.FXMLLoader;
-import javafx.fxml.LoadException;
-import javafx.scene.Parent;
-import javafx.stage.Stage;
 
 /**
  * WelcomeController

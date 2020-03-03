@@ -4,13 +4,8 @@ package ViewModel;
  * OptionMenuController
  */
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import java.net.*;
-import java.io.*;
-import java.util.stream.*;
-import com.google.gson.Gson;
 
 public class OptionMenuController {
 

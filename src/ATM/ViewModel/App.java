@@ -3,16 +3,12 @@ package ViewModel;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.lang.*;
 import javafx.application.Application;
-import java.lang.reflect.InvocationTargetException;
 import java.net.URL;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.LoadException;
 
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.stage.Stage;
 
 /**
  * main
