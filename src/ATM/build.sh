@@ -24,5 +24,6 @@ then
 
     java  --module-path $REALPATH_JAVA_FX --add-modules javafx.controls,javafx.fxml -jar App.jar
 fi
-rm  -r ./bin
+cd ../
+rm  -r bin
 #rm -r $(find . -name '*.class') $(find . -name '*.fxml')

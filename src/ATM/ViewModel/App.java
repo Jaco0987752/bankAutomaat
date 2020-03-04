@@ -25,7 +25,7 @@ public class App extends Application {
         return reference;
     }
 
-    private Stage stage; // Declare static Stage
+    private Stage stage; // Declare Stage
 
     @Override
     public void start(Stage primaryStage) throws Exception {
