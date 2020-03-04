@@ -9,9 +9,8 @@
             "name": "CodeLens (Launch) - App",
             "request": "launch",
             "mainClass": "ViewModel.App",
-            "projectName": "ATM_4182df43",
+            "projectName": "ATM_426092b2",
             "vmArgs": "--module-path ${cwd}\\lib\\javafx-sdk-13.0.2\\lib --add-modules javafx.controls,javafx.fxml"
-
         }
     ]
 }
