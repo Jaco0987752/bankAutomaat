@@ -1,13 +1,17 @@
 package ViewModel;
 
+import Model.DataLoader;
+
 /**
  * OptionMenuController
  */
 
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import org.json.*;
 
-public class OptionMenuController {
+
+public class OptionMenuController   {
 
     @FXML
     private Label showmoney;
@@ -15,14 +19,11 @@ public class OptionMenuController {
     @FXML
     public void initialize() {
         try {
-            // URL yahoo = new URL("http://localhost/test.json");
-            // URLConnection yc = yahoo.openConnection();
-            // BufferedReader in = new BufferedReader(new InputStreamReader(yc.getInputStream()));
-
-            // Gson gson = new Gson();
-            // gson.fromJson(in, Model.Money.class);
-            // in.close();
-            showmoney.setText("AHOJ");
+            JSONObject json = DataLoader.loadData("http://www.google.nl");
+            if (json.has("balance")){
+                long balance = json.getLong("balance");
+                showmoney.setText(String.valueOf(balance));
+            }
 
         } catch (Exception e) {
             // TODO: handle exception

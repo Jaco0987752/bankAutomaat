@@ -20,8 +20,7 @@ public class LoginController {
                 System.out.println("pin accepted"); 
                 Platform.runLater(new Runnable() {
                     public void run() {
-                        final App app = App.GetApp();
-                        app.ScreenLoader("OptionMenu");
+                        App.GetApp().ScreenLoader("OptionMenu");;
                     }
                 });
             }

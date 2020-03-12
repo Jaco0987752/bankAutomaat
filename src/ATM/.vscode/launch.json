@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - DataLoader",
+            "request": "launch",
+            "mainClass": "Model.DataLoader",
+            "projectName": "ATM_426092b2"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - App",
             "request": "launch",
             "mainClass": "ViewModel.App",
