@@ -5,6 +5,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import javafx.application.Application;
 import java.net.URL;
+import Model.SerialReader;
 import javafx.fxml.FXMLLoader;
 
 import javafx.scene.Parent;
@@ -14,6 +15,8 @@ import javafx.scene.Scene;
  * main
  */
 public class App extends Application {
+
+    SerialReader reader = new SerialReader();
 
     public static void main(String[] args) {
         launch(args);
@@ -31,6 +34,7 @@ public class App extends Application {
     public void start(Stage primaryStage) throws Exception {
         stage = primaryStage;
         App.reference = this;
+        
         ScreenLoader("Welcome");
     }
 
