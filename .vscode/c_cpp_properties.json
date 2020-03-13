@@ -1,16 +1,9 @@
 {
     "configurations": [
         {
-            "name": "Win32",
+            "name": "arduino",
             "includePath": [
-                "C:\\Users\\Jaco\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\samd\\1.8.5\\**",
-                "C:\\Users\\Jaco\\AppData\\Local\\Arduino15\\packages\\esp8266\\tools\\**",
-                "C:\\Users\\Jaco\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.6.3\\**",
-                "C:\\Program Files (x86)\\Arduino\\tools\\**",
-                "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\**",
-                "${workspaceFolder}/**",
-                "C:\\Users\\Jaco\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.2\\**",
-                "C:\\Users\\Jaco\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\**"
+                "C:\\Users\\Jaco\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\sam\\1.6.12\\**"
             ],
             "defines": [
                 "_DEBUG",
@@ -20,10 +13,8 @@
             "compilerPath": "C:\\MinGW\\bin\\gcc.exe",
             "cStandard": "c11",
             "cppStandard": "c++17",
-            "intelliSenseMode": "clang-x86",
-            "forcedInclude": [
-                "C:\\Users\\Jaco\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\samd\\1.8.5\\cores\\arduino\\Arduino.h"
-            ]
+            "intelliSenseMode": "clang-x86"
+
         }
     ],
     "version": 4

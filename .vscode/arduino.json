@@ -1,3 +1,4 @@
 {
-    "board": "arduino:samd:mkr1000"
+    "board": "arduino:sam:arduino_due_x_dbg",
+    "sketch": "src\\Arduino\\main\\main.ino"
 }
