@@ -24,7 +24,7 @@ INSERT INTO users (foreName, lastName, digitalAddress, password) VALUES
 
 CREATE TABLE bankaccounts (
   id int NOT NULL AUTO_INCREMENT,
-  accountName VARCHAR(50) NOT NULL,
+  accountname VARCHAR(50) NOT NULL,
   userid int,
   status ENUM('disabled','enabled','deleted') DEFAULT 'enabled',
   madeDate dateTime DEFAULT NOW(),
@@ -38,7 +38,7 @@ CREATE TABLE bankaccounts (
   );
 
 # Test
-INSERT INTO bankaccounts (accountName, userid, balance,  description,  pin, cartNumber) VALUES
+INSERT INTO bankaccounts (accountname, userid, balance,  description,  pin, cartNumber) VALUES
   ('testAccount',(select id from users where foreName = 'testUser'), 100, 'testAcount description',1,1);
 
 CREATE TABLE banks (

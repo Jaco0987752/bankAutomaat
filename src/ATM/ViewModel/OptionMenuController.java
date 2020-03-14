@@ -1,15 +1,12 @@
 package ViewModel;
 
-import Model.DataLoader;
-
 /**
  * OptionMenuController
  */
 
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import org.json.*;
-
+import Model.LoginManager;
 
 public class OptionMenuController   {
 
@@ -19,14 +16,13 @@ public class OptionMenuController   {
     @FXML
     public void initialize() {
         try {
-            JSONObject json = DataLoader.loadData("http://www.google.nl");
-            if (json.has("balance")){
-                long balance = json.getLong("balance");
-                showmoney.setText(String.valueOf(balance));
-            }
+            LoginManager login = LoginManager.tryLogin(1, 1);
+
+            showmoney.setText("balance of " + login.getAccountname() + " is " + login.getBalance());
+
 
         } catch (Exception e) {
-            // TODO: handle exception
+            System.err.println("Error while initialising optioncontroller :" + e.getMessage());
         }
     }
 }
