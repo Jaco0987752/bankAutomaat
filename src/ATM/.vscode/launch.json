@@ -6,17 +6,24 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - LoginManager",
+            "request": "launch",
+            "mainClass": "Model.LoginManager",
+            "projectName": "ATM_6bf41437"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - DataLoader",
             "request": "launch",
             "mainClass": "Model.DataLoader",
-            "projectName": "ATM_426092b2"
+            "projectName": "ATM_6bf41437"
         },
         {
             "type": "java",
             "name": "CodeLens (Launch) - App",
             "request": "launch",
             "mainClass": "ViewModel.App",
-            "projectName": "ATM_426092b2",
+            "projectName": "ATM_6bf41437",
             "vmArgs": "--module-path ${cwd}\\lib\\javafx-sdk-13.0.2\\lib --add-modules javafx.controls,javafx.fxml"
         }
     ]

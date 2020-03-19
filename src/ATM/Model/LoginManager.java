@@ -31,7 +31,7 @@ public class LoginManager {
     // Returns an loginManager when succeeded, else null
     public final static LoginManager tryLogin(int cardNumber, int pincode) {
         try {
-            JSONObject obj = loadData("http://LAPTOP-JACO/bankautomaat/src/JSON_API/getbalance.php");
+            JSONObject obj = loadData("https://www.quickbanking.ml:64405//JSON_API/getbalance.php");
             return new LoginManager(obj.getInt("id"), obj.getString("accountname"), obj.getInt("balance"));
 
         } catch (Exception e) {
