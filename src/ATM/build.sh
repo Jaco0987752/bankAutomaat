@@ -1,11 +1,8 @@
 #!/bin/bash
-CWD=$(PWD)
+CWD=$(pwd)
 JAVA_FX=lib/javafx-sdk-13.0.2/lib
 REALPATH_JAVA_FX=$CWD/$JAVA_FX
-CLASSPATH=lib/gson-2.8.6.jar
 echo $REALPATH_JAVA_FX
-
-echo $CWD
 
 DIR=bin
  if [ ! -d "$DIR" ]; then
@@ -13,7 +10,7 @@ DIR=bin
  fi
 
 #-d $DIR
- if javac -d $DIR --module-path $REALPATH_JAVA_FX -cp $CLASSPATH --add-modules javafx.controls,javafx.fxml $(find . -name '*.java');
+ if javac -d $DIR --module-path $REALPATH_JAVA_FX -classpath $(pwd)/lib/jSerialComm-2.6.0.jar:$(pwd)/lib/org.json-chargebee-1.0.jar --add-modules javafx.controls,javafx.fxml $(find . -name '*.java');
 then
     echo classes compiled
 
