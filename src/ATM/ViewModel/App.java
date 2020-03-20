@@ -18,6 +18,12 @@ public class App extends Application {
 
     private SerialReader reader;
 
+
+    /** use this method to launch the app
+     * if javafx components are missing, add this line to the project in launch json file 
+     *   "vmArgs": "--module-path ${cwd}\\lib\\javafx-sdk-13.0.2\\lib --add-modules javafx.controls,javafx.fxml"
+     * */ 
+    
     public static void main(String[] args) {
         launch(args);
     }
