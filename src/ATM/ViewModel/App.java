@@ -16,7 +16,7 @@ import javafx.scene.Scene;
  */
 public class App extends Application {
 
-    private SerialReader reader;
+    //private SerialReader reader;
 
 
     /** use this method to launch the app
@@ -41,7 +41,7 @@ public class App extends Application {
         stage = primaryStage;
         App.reference = this;
         try {
-            reader = new SerialReader();
+            //reader = new SerialReader();
 
         } catch (Exception e) {
             System.out.println("can't connect to serial " + e.getMessage());
